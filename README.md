@@ -33,9 +33,9 @@ g++ -std=c++17 -Wall -o test_math tests/test_math.cpp math.cpp
 При каждом push и Pull Request в GitHub Actions:
 1. собирается программа и тесты, запускаются тесты (задание `test`);
 2. Pull Request в `main` автоматически сливается, если тесты прошли (задание `automerge`);
-3. генерируется HTML-документация Doxygen и публикуется на GitHub Pages (задание `docs`).
+3. генерируется HTML-документация Doxygen и сохраняется как артефакт `api-docs` (задание `docs`).
 
-Документация: https://pvqh.github.io/Lab_TRPO/
+Локально документацию можно сгенерировать командой `doxygen Doxyfile` (результат в папке `docs/html`).
 
 ## Ветви
 
