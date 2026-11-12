@@ -13,4 +13,6 @@ public:
     static int multiply(int a, int b);
     /// Целочисленное деление: a / b. При b == 0 выбрасывает std::invalid_argument.
     static int divide(int a, int b);
+    /// Возведение в степень: base^exp (exp >= 0).
+    static int power(int base, int exp);
 };

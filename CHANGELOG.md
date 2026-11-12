@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+### Added
+- Операция power (возведение в степень).
+
 ## [1.0.0] - 2026-11-13
 ### Added
 - Операции add, subtract, multiply, divide в классе Math.

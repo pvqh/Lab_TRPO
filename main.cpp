@@ -8,5 +8,6 @@ int main() {
     std::cout << "Subtraction: " << Math::subtract(a, b) << std::endl;
     std::cout << "Multiply: " << Math::multiply(a, b) << std::endl;
     std::cout << "Divide: " << Math::divide(a, b) << std::endl;
+    std::cout << "Power: " << Math::power(a, b) << std::endl;
     return 0;
 }
