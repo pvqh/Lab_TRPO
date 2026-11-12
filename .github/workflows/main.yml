@@ -20,4 +20,13 @@ jobs:
         run: g++ -std=c++17 -Wall -o test_math tests/test_math.cpp math.cpp
 
       - name: Run tests
-        run: ./test_math
+        shell: bash
+        run: ./test_math | tee test_report.txt
+
+      - name: Test report
+        if: always()
+        run: |
+          echo "### Test results" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          cat test_report.txt >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
