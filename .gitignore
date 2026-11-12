@@ -2,3 +2,4 @@ app
 test_math
 *.exe
 test_report.txt
+docs/

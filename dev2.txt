@@ -1,2 +1,0 @@
-New file from dev2
-Small update of dev2.txt

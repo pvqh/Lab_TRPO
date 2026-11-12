@@ -23,6 +23,8 @@ int main() {
     check(Math::multiply(5, 0) == 0, "multiply(5, 0) == 0");
     check(Math::divide(10, 2) == 5, "divide(10, 2) == 5");
     check(Math::divide(7, 2) == 3, "divide(7, 2) == 3");
+    check(Math::power(2, 10) == 1024, "power(2, 10) == 1024");
+    check(Math::power(5, 0) == 1, "power(5, 0) == 1");
 
     bool thrown = false;
     try {
