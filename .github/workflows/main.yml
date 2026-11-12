@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build program
+        run: g++ -std=c++17 -Wall -o app main.cpp math.cpp
+
+      - name: Build tests
+        run: g++ -std=c++17 -Wall -o test_math tests/test_math.cpp math.cpp
+
+      - name: Run tests
+        run: ./test_math
