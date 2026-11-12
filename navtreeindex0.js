@@ -1,0 +1,23 @@
+var NAVTREEINDEX0 =
+{
+"annotated.html":[5,0],
+"classMath.html":[5,0,0],
+"classes.html":[5,1],
+"files.html":[6,0],
+"functions.html":[5,2,0],
+"functions_func.html":[5,2,1],
+"globals.html":[6,1,0],
+"globals_func.html":[6,1,1],
+"index.html":[],
+"index.html#autotoc_md1":[0],
+"index.html#autotoc_md2":[1],
+"index.html#autotoc_md3":[2],
+"index.html#autotoc_md4":[3],
+"index.html#autotoc_md5":[4],
+"main_8cpp.html":[6,0,0],
+"main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[6,0,0,0],
+"math_8cpp.html":[6,0,1],
+"math_8h.html":[6,0,2],
+"math_8h_source.html":[6,0,2],
+"pages.html":[]
+};
