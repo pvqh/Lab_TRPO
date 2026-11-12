@@ -1,0 +1,12 @@
+# Настройки Doxygen для генерации документации
+PROJECT_NAME           = "Lab_TRPO"
+PROJECT_NUMBER         = 1.0.0
+PROJECT_BRIEF          = "Учебный калькулятор на C++"
+OUTPUT_DIRECTORY       = docs
+OUTPUT_LANGUAGE        = Russian
+INPUT                  = README.md math.h math.cpp main.cpp
+USE_MDFILE_AS_MAINPAGE = README.md
+EXTRACT_ALL            = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+QUIET                  = YES
