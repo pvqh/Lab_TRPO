@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Build program
         run: g++ -std=c++17 -Wall -o app main.cpp math.cpp
@@ -26,7 +26,6 @@ jobs:
       - name: Test report
         if: always()
         run: |
-          echo "### Test results" >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
-          cat test_report.txt >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
+          while read line; do
+            echo "::notice title=Unit test::$line"
+          done < test_report.txt
